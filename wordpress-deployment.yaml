@@ -35,7 +35,7 @@ spec:
         emptyDir: {}
       containers:
         - name: app
-          image: <REPLACE WITH DOCKER PHP-FPM IMAGE URL>
+          image: wordpress:php8.1-fpm
           imagePullPolicy : IfNotPresent
           volumeMounts:
             - name: shared-files
